@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import './Contact.css';
 
 function Contact(props) {
-     return ( <div className="contact"> <span> {props.name} </span> </div> ); 
+     return ( <div className="contact">
+      <span> <b> {props.name} </b> </span> <br></br>
+      <span> {props.email} </span> <br></br>
+      <span> {props.phone} </span>
+      </div> ); 
 
 }
 
