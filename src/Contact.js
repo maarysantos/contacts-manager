@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
 import './Contact.css';
 
-const people = [
-    {"id": 1, "name": "Leanne Graham"},
-    {"id": 2, "name": "Ervin Howell"},
-    {"id": 3, "name": "Clementine Bauch"},
-    {"id": 4, "name": "Patricia Lebsack"}
-   ];
+function Contact(props) {
+     return ( <div className="Contact"> <span> {props.name} </span> </div> ); 
 
-class Contact extends Component {
-    render() {
-        return (
-            <div className="Contact">
-            <span>Mari Santos</span>
-             </div>
-          );
-    }
-}    
+}
+
+Contact.propTypes = { name: PropTypes.string.isRequired };
 
 export default Contact;
 
