@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactList from './ContactList';
+import ContactList from './components/ContactList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,7 +15,7 @@ class App extends Component {
           return <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1> React Contact Manager </h1>
+            <h2> React Contact Manager </h2>
           </header>
           <ContactList contacts={contacts} />
           </div>

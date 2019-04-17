@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './ContactList.css';
 import Contact from './Contact';
 
 //para usar expressoes js, precisamos por {} 
